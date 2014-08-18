@@ -47,7 +47,7 @@ function fetchAllItemsOrdered()
            if(res[0][0] != "None")
                   {
 					  table = '<table border="1" style="width:200px">';
-                                          table += "<tr><td>Order Id</td><td>Menu Name</td></tr>" 
+                                          table += "<tr><th>Order Id</th><th>Menu Name</th></tr>" 
 					  for (i = 0; i < res.length; i++)
 					  {
 						  row = res[i];
