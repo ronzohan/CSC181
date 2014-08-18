@@ -9,8 +9,10 @@ except ImportError:
 def index(req,order_id):
     order_id = cgi.escape(order_id)
     a = doSql()
-    query = "SELECT * FROM get_items_ordered('"+ order_id +"');"
-    print query
+    if order_id == 'None':
+        query = "SELECT * FROM get_items_ordered_all()"
+    else:
+        query = "SELECT * FROM get_items_ordered('"+ order_id +"');"
     items = a.execqry(query,False)
     result = []
     del a
