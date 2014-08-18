@@ -1,1 +1,1 @@
-![My image](ronzohan.github.com/CSC181/img/snapshot4.jpeg)
+The sample screenshot of my work is on the repository wiki
