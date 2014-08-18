@@ -7,10 +7,10 @@
 --controller
 --view
 create or replace function 
-    get_items_ordered(in int, out int, out text) 
+    get_items_ordered(in int, out int, out text,out timestamp) 
 returns setof record as
 $$ 
-     select order_id, menu_name from orders
+     select order_id, menu_name,order_time from orders
      where order_id = $1;     
 $$
  language 'sql';
